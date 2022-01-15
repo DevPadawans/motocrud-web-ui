@@ -42,3 +42,7 @@ Pronto basta acessar:
 
 https://localhost:4200
 
+# Ambiente de desenvolvimento
+
+- [VS Code](https://code.visualstudio.com/download)
+- [Angular Extension Pack](https://marketplace.visualstudio.com/items?itemName=loiane.angular-extension-pack)
