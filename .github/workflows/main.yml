@@ -34,7 +34,7 @@ jobs:
     - name: Build
       run: npm run build:ci      
     - name: Test
-      run: npm run test
+      run: npm run test:ci -- --watch=false --browsers=ChromeHeadless
     - name: Archive build
       if: success()
       uses: actions/upload-artifact@v1
