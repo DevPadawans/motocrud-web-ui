@@ -1,3 +1,5 @@
+[![Angular Workflow](https://github.com/DevPadawans/motocrud-web-ui/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/DevPadawans/motocrud-web-ui/actions/workflows/main.yml)
+
 # Motocrud Web UI
 
 ## Descrição
