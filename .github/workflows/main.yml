@@ -34,7 +34,7 @@ jobs:
     - name: Build
       run: npm run build:ci      
     - name: Test
-      run: npm run test
+      run: npm run test:ci -- --watch=false --browsers=ChromeHeadless
     - name: Archive build
       if: success()
       uses: actions/upload-artifact@v1
@@ -63,4 +63,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION_DEPLOY_ANGULAR }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/angular-demo
+          FOLDER: deploy_dist/motocrud-web-ui
