@@ -61,6 +61,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION_DEPLOY_ANGULAR }}
+          super_secret: ${{ secrets.TOKEN_GITHUB_ACTION_DEPLOY_ANGULAR }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/motocrud-web-ui
