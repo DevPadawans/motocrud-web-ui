@@ -40,7 +40,7 @@ $custom-palette: (
 );
 
 $custom-app-primary: mat-palette($custom-palette);
-$custom-app-accent: mat-palette($mat-indigo, A200, A400, 700);
+$custom-app-accent: mat-palette($custom-palette, A200, A400, 700);
 $custom-app-warn: mat-palette($mat-red);
 
 $custom-app-theme: mat-light-theme((
@@ -71,3 +71,7 @@ $dark-theme:   mat-dark-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toolbar-spacer{
+  flex: 1 1 auto;
+}

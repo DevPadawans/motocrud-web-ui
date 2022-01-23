@@ -1,3 +1,4 @@
+import { MembersService } from './../../../../data/services/members.service';
 import { Member } from './../../../../domain/interfaces/entities/member';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,17 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class MembersComponent implements OnInit {
 
   members: Member[];
-  displayedColumns = ['name'];
+  displayedColumns = ['_id', 'name'];
 
-  constructor() {
-    this.members = [
-      {_id: '1', name: 'Ogro'},
-      {_id: '2', name: 'Smile'},
-      {_id: '3', name: 'Prod'}
-    ];
+  constructor(private membersService: MembersService) {
+    this.members = this.membersService.getAll();
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
