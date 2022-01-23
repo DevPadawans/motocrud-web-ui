@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { SidenavTopMenuComponent } from './sidenav-top-menu.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 describe('SidenavTopMenuComponent', () => {
   let component: SidenavTopMenuComponent;
@@ -11,6 +12,7 @@ describe('SidenavTopMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MatMenuModule],
       declarations: [ SidenavTopMenuComponent ]
     })
     .compileComponents();

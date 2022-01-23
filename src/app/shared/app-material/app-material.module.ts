@@ -23,7 +23,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSidenavModule,
     MatSliderModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSliderModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatBadgeModule,
+    MatDividerModule,
+    MatListModule
   ], // note the imports
   exports: [
     MatTableModule,
