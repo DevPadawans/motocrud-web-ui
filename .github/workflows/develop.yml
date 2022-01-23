@@ -63,4 +63,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION_DEPLOY_ANGULAR }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/motocrud-web-ui
+          FOLDER: deploy_dist
