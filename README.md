@@ -48,3 +48,6 @@ https://localhost:4200
 
 - [VS Code](https://code.visualstudio.com/download)
 - [Angular Extension Pack](https://marketplace.visualstudio.com/items?itemName=loiane.angular-extension-pack)
+
+# Deploy - Dev
+[Acessar - DEV](https://devpadawans.github.io/motocrud-web-ui)
