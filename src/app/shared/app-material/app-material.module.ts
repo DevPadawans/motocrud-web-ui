@@ -5,12 +5,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 
 
@@ -34,7 +36,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSidenavModule,
     MatBadgeModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ], // note the imports
   exports: [
     MatTableModule,
@@ -54,7 +57,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSidenavModule,
     MatBadgeModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ]
 })
 export class AppMaterialModule { }
