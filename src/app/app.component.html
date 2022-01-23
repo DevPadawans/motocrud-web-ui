@@ -1,6 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" class="mat-elevation-z8" opened="">
+    <app-sidenav-top-menu></app-sidenav-top-menu>
+    <app-sidenav-menu></app-sidenav-menu>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <app-top-menu></app-top-menu>
     <button (click)="sidenav.toggle()" mat-icon-button aria-label="Menu">

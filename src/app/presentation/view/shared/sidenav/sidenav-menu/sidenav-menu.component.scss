@@ -1,0 +1,22 @@
+.section-menu {
+  padding: 15px 20px;
+}
+
+.section-title h3{
+  color: #6797f7;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+::ng-deep .mat-subheader{
+  color:#fff;
+}
+
+::ng-deep .mat-list-item-content, .mat-list-text {
+  padding: 0 !important;
+}
+
+::ng-deep .mat-list-text {
+  padding: 0 !important;
+  color:#fff;
+}

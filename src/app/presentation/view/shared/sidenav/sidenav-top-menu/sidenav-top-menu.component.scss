@@ -1,0 +1,20 @@
+.topmenu-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .sidenav-menu-profile {
+  width: 200px;
+}
+
+.sidenav-profile{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sidenav-profile-info{
+  margin-top: 20px;
+}
+.rounded-full{
+  border-radius: 9999px!important;
+  width: 110px;
+}
