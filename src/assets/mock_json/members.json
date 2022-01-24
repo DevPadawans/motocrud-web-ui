@@ -1,0 +1,14 @@
+{
+  "succeeded": true,
+  "messages": [],
+  "data": [
+    {
+      "_id": "1",
+      "name": "Ogro"
+    },
+    {
+      "_id": "2",
+      "name": "Smile"
+    }
+  ]
+}

@@ -13,6 +13,7 @@
     </button>
   </mat-toolbar>
 </mat-card>
+<div *ngIf="members$ | async as members; else loading">
 <table mat-table [dataSource]="members" class="mat-elevation-z8">
   <!-- Id Column -->
   <ng-container matColumnDef="_id">
@@ -29,3 +30,8 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+</div>
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>
+
