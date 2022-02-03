@@ -14,7 +14,7 @@
   </mat-toolbar>
 </mat-card>
 <div *ngIf="members$ | async as members; else loading">
-<table mat-table [dataSource]="members" class="mat-elevation-z8">
+<table mat-table [dataSource]="members.data" class="mat-elevation-z8">
   <!-- Id Column -->
   <ng-container matColumnDef="_id">
     <th mat-header-cell *matHeaderCellDef>Id</th>
