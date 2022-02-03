@@ -12,33 +12,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 
 
 
 
 @NgModule({
-  imports: [
-    MatTableModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatSliderModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatSliderModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatBadgeModule,
-    MatDividerModule,
-    MatListModule,
-    MatInputModule
-  ], // note the imports
   exports: [
     MatTableModule,
     MatCardModule,
@@ -58,7 +39,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatBadgeModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressSpinnerModule
   ]
 })
 export class AppMaterialModule { }
