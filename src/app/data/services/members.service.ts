@@ -17,7 +17,6 @@ export class MembersService {
     return this.httpClient.get<Result<Member[]>>(this.API)
     .pipe(
       first(),
-      delay(5000),
       tap(result => console.log(result))
     )
   }

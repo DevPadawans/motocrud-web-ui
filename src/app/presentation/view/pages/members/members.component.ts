@@ -14,7 +14,9 @@ export class MembersComponent implements OnInit {
   members$: Observable<Result<Member[]>>;
   displayedColumns = ['_id', 'name'];
 
-  constructor(private membersService: MembersService) {
+  constructor(
+    private membersService: MembersService
+  ) {
     this.members$ = this.membersService.getAll();
   }
 
