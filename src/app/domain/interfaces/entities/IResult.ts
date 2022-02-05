@@ -1,4 +1,4 @@
-export interface Result<T> {
+export interface IResult<T> {
   succeeded: boolean,
   messages: string[],
   data: T

@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
+import { AppMaterialModule } from 'src/app/app-material.module';
 
+import { SharedModule } from './../../shared/shared.module';
 import { MembersRoutingModule } from './members-routing.module';
 import { MembersComponent } from './members.component';
 
@@ -13,7 +14,8 @@ import { MembersComponent } from './members.component';
   imports: [
     CommonModule,
     MembersRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class MembersModule { }

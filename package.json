@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:proxy": "ng serve --proxy-config proxy.conf.js",
     "build": "ng build",
     "build:ci": "ng build --prod --sourceMap=false --base-href motocrud-web-ui",
     "test": "ng test",
