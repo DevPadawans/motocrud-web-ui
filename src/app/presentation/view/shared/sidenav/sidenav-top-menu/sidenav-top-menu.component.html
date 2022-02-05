@@ -1,0 +1,33 @@
+<div id="sidenav-top">
+  <div id="sidenav-topmenu">
+    <mat-toolbar color="primary">
+      <span>MotoCrud</span>
+      <span class="topmenu-spacer"></span>
+      <button matBadge="15" matBadgeColor="warn" matBadgeSize="small" mat-icon-button aria-label="Notifications">
+        <mat-icon>notifications</mat-icon>
+      </button>
+      <button mat-button [matMenuTriggerFor]="menu" mat-icon-button aria-label="Account">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-menu #menu="matMenu" xPosition="before" class="sidenav-menu-profile">
+      <button mat-menu-item>Nome_Usuario</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item><mat-icon>account_circle</mat-icon> Profile</button>
+      <button mat-menu-item><mat-icon>settings</mat-icon> Settings</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item><mat-icon>logout</mat-icon>Sign out</button>
+    </mat-menu>
+  </div>
+
+  <div class="sidenav-profile">
+    <div class="sidenav-profile-photo">
+      <img alt="User avatar" src="/assets/img/user_profile_photo.jpg" class="rounded-full">
+    </div>
+    <div class="sidenav-profile-info">
+      <div>Nome Usuario</div>
+      <div>usuario@motocrud.com.br</div>
+    </div>
+  </div>
+</div>
