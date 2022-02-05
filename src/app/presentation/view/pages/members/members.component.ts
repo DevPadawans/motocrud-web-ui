@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { Member } from 'src/app/domain/interfaces/entities/member';
-import { Result } from 'src/app/domain/interfaces/entities/result';
+import { IMember } from 'src/app/domain/interfaces/entities/IMember';
+import { IResult } from 'src/app/domain/interfaces/entities/IResult';
 
 import { MembersService } from './../../../../data/services/members.service';
 
@@ -15,9 +15,9 @@ import { MembersService } from './../../../../data/services/members.service';
 })
 export class MembersComponent implements OnInit {
 
-  result$: Observable<Member[]>;
+  result$: Observable<IMember[]>;
   displayedColumns = ['_id', 'name'];
-  result: Result<Member[]>;
+  result: IResult<IMember[]>;
 
   constructor(
     private membersService: MembersService,
