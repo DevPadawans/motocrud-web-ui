@@ -9,12 +9,12 @@ import { Result } from 'src/app/domain/interfaces/entities/result';
 })
 export class MembersService {
 
-  private readonly API = '/assets/mock_json/members.json';
+  private readonly API = '/assets/mock_json/members.jsonaa';
 
   constructor(private httpClient: HttpClient) { }
 
   getAll() {
-    return this.httpClient.get<Result<Member[]>>(this.API)
+    return this.httpClient.get<Member[]>(this.API)
     .pipe(
       first(),
       tap(result => console.log(result))

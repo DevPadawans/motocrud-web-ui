@@ -1,8 +1,12 @@
-import { MembersService } from './../../../../data/services/members.service';
-import { Member } from './../../../../domain/interfaces/entities/member';
+import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
+import { Observable, of } from 'rxjs';
+import { catchError, tap } from 'rxjs/operators';
+import { Member } from 'src/app/domain/interfaces/entities/member';
 import { Result } from 'src/app/domain/interfaces/entities/result';
+
+import { MembersService } from './../../../../data/services/members.service';
 
 @Component({
   selector: 'app-members',
@@ -11,15 +15,29 @@ import { Result } from 'src/app/domain/interfaces/entities/result';
 })
 export class MembersComponent implements OnInit {
 
-  members$: Observable<Result<Member[]>>;
+  result$: Observable<Member[]>;
   displayedColumns = ['_id', 'name'];
+  result: Result<Member[]>;
 
   constructor(
-    private membersService: MembersService
+    private membersService: MembersService,
+    public dialog: MatDialog
   ) {
-    this.members$ = this.membersService.getAll();
+    this.result$ = this.membersService.getAll()
+    .pipe(
+      catchError(error => {
+        this.onError("Erro ao carregar os Membros");
+        return of ([])
+      })
+    );
   }
 
   ngOnInit(): void { }
+
+  onError(errorMessage: string){
+    this.dialog.open(ErrorDialogComponent, {
+      data: errorMessage
+    });
+  }
 
 }
