@@ -1,4 +1,4 @@
-import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
+import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable, of } from 'rxjs';
@@ -6,12 +6,12 @@ import { catchError, tap } from 'rxjs/operators';
 import { IMember } from 'src/app/domain/interfaces/entities/IMember';
 import { IResult } from 'src/app/domain/interfaces/entities/IResult';
 
-import { MembersService } from './../../../../data/services/members.service';
+import { MembersService } from '../../../../../data/services/members.service';
 
 @Component({
   selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.scss']
+  templateUrl: './members-list.component.html',
+  styleUrls: ['./members-list.component.scss']
 })
 export class MembersComponent implements OnInit {
 

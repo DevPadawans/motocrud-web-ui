@@ -4,7 +4,7 @@ import { AppMaterialModule } from 'src/app/app-material.module';
 
 import { SharedModule } from './../../shared/shared.module';
 import { MembersRoutingModule } from './members-routing.module';
-import { MembersComponent } from './members.component';
+import { MembersComponent } from './members-list/members-list.component';
 
 
 @NgModule({
