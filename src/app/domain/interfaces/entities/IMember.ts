@@ -8,7 +8,7 @@ export interface IMember {
   data_nascimento: Date;
   cpf: string;
   rg: string;
-  veiculo:string;
+  veiculo: string;
   cnh:string;
   cnh_categoria:string;
   tipo_sanguineo:string;

@@ -13,7 +13,7 @@ import { MembersService } from '../../../../../data/services/members.service';
   templateUrl: './members-list.component.html',
   styleUrls: ['./members-list.component.scss']
 })
-export class MembersComponent implements OnInit {
+export class MembersListComponent implements OnInit {
 
   result$: Observable<IMember[]>;
   displayedColumns = ['_id', 'name'];

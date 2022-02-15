@@ -4,12 +4,14 @@ import { AppMaterialModule } from 'src/app/app-material.module';
 
 import { SharedModule } from './../../shared/shared.module';
 import { MembersRoutingModule } from './members-routing.module';
-import { MembersComponent } from './members-list/members-list.component';
+import { MembersListComponent } from './members-list/members-list.component';
+import { MembersAddEditComponent } from './members-add-edit/members-add-edit.component';
 
 
 @NgModule({
   declarations: [
-    MembersComponent
+    MembersListComponent,
+    MembersAddEditComponent
   ],
   imports: [
     CommonModule,
